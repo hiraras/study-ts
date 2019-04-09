@@ -4,6 +4,7 @@ import * as React from 'react';
 import Basic from './Basic/index.tsx';
 import Interface from './Interface/index.tsx';
 import Navigator from './Navigator/index.tsx';
+import Class from './Class/index.tsx';
 
 class App extends React.Component {
     render() {
@@ -12,6 +13,7 @@ class App extends React.Component {
                 <Route path="/" exact component={Navigator} />
                 <Route path="/basic" component={Basic} />
                 <Route path="/interface" component={Interface} />
+                <Route path="/class" component={Class} />
             </Switch>
         </HashRouter>
     }

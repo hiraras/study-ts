@@ -57,6 +57,8 @@ class Basic extends React.Component {
 
     // never类型必须存在无法到达的终点
     infiniteLoop(): never {
+        let bool = true; // 报错，不能使用变量
+        // let bool = false; // 报错，不能使用变量，且应该要一个无法到达的终点
         while (true) {
         }
     }
