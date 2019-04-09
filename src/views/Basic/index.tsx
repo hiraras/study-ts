@@ -7,7 +7,7 @@ interface Human {
 
 class Basic extends React.Component {
 
-    // test = 'test';
+    test = 'test';
     // public相当于建立了同名的成员变量
     constructor(public name) {
         super();
@@ -26,6 +26,7 @@ class Basic extends React.Component {
         enum Color { red = 1, green, blue };
         console.log(Color); // {1: "red", 2: "green", 3: "blue", red: 1, green: 2, blue: 3}
         const c: Color = Color.green;
+        console.log(Color[2]); // green
         // 或者
         const c2: number = Color.green;
         // object,可以赋值为任意值，但是只能调用object上的方法，而不能随意调用任意方法，

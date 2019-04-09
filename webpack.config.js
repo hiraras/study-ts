@@ -1,4 +1,6 @@
 
+const webpack = require("webpack");
+
 module.exports = {
     entry: __dirname + '/src/index.js',
     output: {
@@ -9,8 +11,11 @@ module.exports = {
     devServer: {
         contentBase: __dirname + '/public',
         inline: true,
+        hot: true,
     },
-    plugins: [],
+    plugins: [
+        new webpack.NamedModulesPlugin(), // 热替换插件
+    ],
     module: {
         rules: [
             {

@@ -14,6 +14,11 @@ interface Point {
     readonly y: number;
 }
 
+// 函数接口
+interface GetFunc{
+    (params: string): number[];
+}
+
 class Interface extends React.Component {
     constructor(public name) {
         super();
@@ -38,8 +43,22 @@ class Interface extends React.Component {
         let c = [];
     }
 
+    getData(param) {
+        return [];
+    }
+
     render() {
         const person = { firstName: 'tom' };
+        let getData: GetFunc;
+        getData = this.getData;
+        interface StringArray {
+            [i: number]: string;
+        }
+        
+        let myArray: StringArray;
+        myArray = ["Bob", "Fred"];
+        
+        let myStr: string = myArray[0];
         this.getPersonMsg({ age: 13, firstName: 'jack', lastName: 'jassia' }); // 字段数必须和接口一样
         this.getPersonMsg(person as Human);
         // 使用断言可以绕过检查,但是可能有些属性还是需要检查的，可以使用[propName: string]: any
