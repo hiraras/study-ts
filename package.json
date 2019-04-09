@@ -18,6 +18,8 @@
     "less-loader": "^4.1.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
     "ts-loader": "^5.3.3",
     "typescript": "^3.4.2",
     "webpack": "^4.29.6",

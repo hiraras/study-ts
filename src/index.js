@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Basic from './views/Basic/index.tsx';
+import App from './views/App';
 
 const rootDom = document.getElementById('root');
-ReactDOM.render(<Basic />, rootDom);
+ReactDOM.render(<App />, rootDom);
