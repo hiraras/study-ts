@@ -7,6 +7,7 @@ class Routes extends React.Component {
             <li><Link to='/basic'>Basic</Link></li>
             <li><Link to='/interface'>Interface</Link></li>
             <li><Link to='/class'>Class</Link></li>
+            <li><Link to='/func'>Func</Link></li>
         </ul>
     }
 }

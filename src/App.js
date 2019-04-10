@@ -1,10 +1,7 @@
 import { HashRouter, Route } from 'react-router-dom';
 import { Switch } from 'react-router'; 
 import * as React from 'react';
-import Basic from './Basic/index.tsx';
-import Interface from './Interface/index.tsx';
-import Navigator from './Navigator/index.tsx';
-import Class from './Class/index.tsx';
+import { Basic, Interface, Class, Func, Navigator } from './views';
 
 class App extends React.Component {
     render() {
@@ -14,6 +11,7 @@ class App extends React.Component {
                 <Route path="/basic" component={Basic} />
                 <Route path="/interface" component={Interface} />
                 <Route path="/class" component={Class} />
+                <Route path="/func" component={Func} />
             </Switch>
         </HashRouter>
     }
