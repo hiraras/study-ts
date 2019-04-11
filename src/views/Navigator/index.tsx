@@ -10,6 +10,7 @@ class Routes extends React.Component {
             <li><Link to='/interface'>Interface</Link></li>
             <li><Link to='/class'>Class</Link></li>
             <li><Link to='/func'>Func</Link></li>
+            <li><Link to='/genericity'>Genericity</Link></li>
         </ul>
     }
 }

@@ -7,7 +7,7 @@ module.exports = {
         path: __dirname + '/public',
         filename: 'bundle.js'
     },
-    devtool: 'eval-module-map',
+    devtool: 'source-map',
     devServer: {
         contentBase: __dirname + '/public',
         inline: true,
